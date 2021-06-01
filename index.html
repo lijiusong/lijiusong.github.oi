@@ -9,20 +9,23 @@
     <title>Document</title>
     <style>
         #title {
-            font-size: 50px;
+           
             text-align: center;
+        }
+        .content{
+            font-size: 50px;
         }
     </style>
     <script>
-        $('#title').ready(function () {
+        $('.content').ready(function () {
             var colors = ['red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'violet']
             var index = 0;
             setInterval(function () {
-                $('#title').css('color', colors[index]);
-                if(index === 6){
+                $('.content').css('color', colors[index]);
+                if (index === 6) {
                     index = 0;
                 }
-                else{
+                else {
                     index++;
                 }
             }, 1000)
@@ -34,7 +37,12 @@
 </head>
 
 <body>
-    <p id='title'>海鸡是煞笔</p>
+    <div id='title'>
+        <p class="content">这是一个牛逼的静态网页托管</p>
+        <hr>
+        <span>海鸡,静态网页演示给你次次</span>
+    </div>
+
 </body>
 
 </html>
